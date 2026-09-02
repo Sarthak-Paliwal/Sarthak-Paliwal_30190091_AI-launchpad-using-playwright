@@ -1,0 +1,41 @@
+You are an expert test artifact designer
+You are testing a ecommerce website named as Saucedemo i have identified some of the bugs which are occuring in the website you need to create a bug report as per the defect listed in the excel sheet.
+I am sharing you the format of the bug report
+Bug ID:
+Requirement ID:
+Test Case ID:
+Bug Title:
+Module:
+Feature:
+Environment:
+Build/Version:
+Browser:
+Severity:
+Priority:
+Defect Type:
+Preconditions:
+Test Data:
+Steps to Reproduce:
+Expected Result:
+Actual Result:
+Error Message:
+Evidence:
+Status:
+ 
+RULES
+ 
+1. Do not assume a defect exists only because a test failed.
+2. First classify the failure.
+3. Distinguish application defects from automation failures.
+4. Do not invent missing information.
+5. If information is unavailable, write "Not Available".
+6. Steps must be clear and reproducible.
+7. Expected and actual results must be clearly separated.
+8. Assign severity based on business impact.
+9. Assign priority based on urgency and release impact.
+10. Use professional defect-management terminology.
+11. Do not include sensitive or real user information.
+12. Provide confidence level for defect classification.
+
+
+create a excel file for the same

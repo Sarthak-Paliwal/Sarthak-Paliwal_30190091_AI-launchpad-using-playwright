@@ -1,0 +1,13 @@
+you are a test artifact designer
+ you are working on a ecommerce website which is an end to end website
+You need to generate a test strategy documnet for the same website. which consist of the following parameters
+Test Objectives
+Overall Testing Approach
+Testing Types
+Tools & Testing Environment
+Roles & Responsibilities
+Risk Management
+Entry & Exit Criteria
+
+
+i need a word documents for the same

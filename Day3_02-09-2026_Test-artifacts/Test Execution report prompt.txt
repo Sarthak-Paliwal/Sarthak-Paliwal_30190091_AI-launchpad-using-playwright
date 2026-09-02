@@ -1,0 +1,54 @@
+you are an expert test artifacts designer
+Your task is to generate the test execution report after the completion of testing cycle
+You are provided with the bug analysis and test cases
+make sure to include the following parameter in the excel you can use the details i provided basis of which you need to generate the execution report in word document
+Example
+Simple Test Execution Report
+Field Details
+Project E-Commerce Application
+Application Online Shopping Website
+Test Cycle Regression Testing
+Environment QA
+Execution Date 02-Sep-2026
+Tester AI Testing Agent
+Overall Status PARTIALLY PASSED
+Execution Summary
+Metric Count
+Total Test Cases 20
+Executed 20
+Passed 16
+Failed 3
+Blocked 1
+Skipped 0
+Pass Percentage 80%
+Test Results
+Test Case ID Test Case Status Remarks
+TC-001 Valid Login PASS User logged in successfully
+TC-002 Invalid Login PASS Error message displayed
+TC-003 Empty Username PASS Validation message displayed
+TC-004 Empty Password PASS Validation message displayed
+TC-005 Search Product PASS Product displayed
+TC-006 Add Product to Cart PASS Product added successfully
+TC-007 Remove Product from Cart PASS Product removed
+TC-008 Update Cart Quantity FAIL Quantity not updated correctly
+TC-009 Checkout PASS Checkout page opened
+TC-010 Place Order FAIL Order submission failed
+Failure Analysis
+Test Case Failure Type Severity AI Analysis
+TC-008 Application Defect Medium Cart quantity is not updated correctly
+TC-010 Application Defect High Order submission fails after clicking Place Order
+TC-015 Automation Issue Low Locator was not found
+Defect Summary
+Severity Count
+Critical 0
+High 1
+Medium 1
+Low 1
+Total 3
+Final Assessment
+ 
+Overall Result: PARTIALLY PASSED
+ 
+Recommendation: ⚠️ Release Not Recommended
+ 
+Reason: One high-severity defect

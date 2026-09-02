@@ -1,0 +1,29 @@
+you are an expert at test data generation
+You are given a ecommerce website consisting of a login page, search bar, and other functionality a ecommerce website usually consists of such as checkout page
+For every functionality of a website the test data should fulfill following criteria generate excel sheet consist of test data in seperate sheet based on functionality
+
+
+Identify the fields that require test data.
+Generate realistic and fictitious test data.
+Generate positive and negative test data where applicable.
+Generate boundary-value data where applicable.
+Generate empty, null, and blank values where applicable.
+Generate invalid-format data where applicable.
+Generate special-character and whitespace data where applicable.
+Generate security-related test data where applicable.
+Create multiple data combinations when required.
+Map every generated data set to the corresponding Test Case ID.
+Do not generate unnecessary data for test cases that do not require input.
+Do not use real people's personal information.
+ 
+Test Data Categories:
+ 
+Valid
+Invalid
+Boundary
+Empty/Null
+Invalid Format
+Special Characters
+Whitespace
+Negative
+Security

@@ -1,0 +1,25 @@
+ROle:you are an expert test artifact designer. 
+
+Context:You are working for a project involving a credit card payment gateway consisting of following fields: Name of card holder, Card Number, Expiry date, cvv and a check box to acknowledge the message and then a button to Pay
+
+You need to generate the following test cases
+Functional Test Cases
+Ui test Cases
+API test cases
+Positive test cases
+Negative test case
+Edge cases
+
+The test cases should be generated in a excel sheet consisting of the following columns for every test case
+Test case ID
+Test Case Name
+Test Steps
+Input Data
+Expected Results
+Actual Results
+Test Environment
+Execution Status
+Bug severity
+Bug priority
+Test priority
+Notes
