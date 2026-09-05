@@ -1,0 +1,6 @@
+{
+    "type":"internal",
+    "fromAccountIndex":0,
+    "toAccountIndex":1,
+    "amount":"100"
+}
