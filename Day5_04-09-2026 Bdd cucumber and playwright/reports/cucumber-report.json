@@ -1,0 +1,92 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "form-feature;successful-form-submission-with-valid-data",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Successful form submission with valid data",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 634053199
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1739038399
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the form page",
+            "match": {
+              "location": "features\\stepDefinitions\\formSteps.ts:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 214428200
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user fills out the form with John Doe, john.doe@example.com, Male, 1234567890, 29122002, Math, Reading, 123 Main St, NCR, and Agra",
+            "match": {
+              "location": "features\\stepDefinitions\\formSteps.ts:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 11753700
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the form should be submitted successfully",
+            "match": {
+              "location": "features\\stepDefinitions\\formSteps.ts:39"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 67548499
+            },
+            "keyword": "After",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1122599
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "form-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Form Feature",
+    "tags": [],
+    "uri": "features\\form.feature"
+  }
+]
