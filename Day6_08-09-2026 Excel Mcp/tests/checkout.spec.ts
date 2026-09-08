@@ -1,0 +1,10 @@
+import { test, expect } from '../fixtures/baseFixture';
+
+test.describe('Checkout @checkout @regression', () => {
+  test.beforeEach(async ({ inventoryPage }) => { await inventoryPage.goto(); await inventoryPage.addFirstProduct(); await inventoryPage.openCart(); });
+  test('TC-018 / SC-032 missing checkout fields @smoke @sanity', async ({ cartPage, checkoutPage }) => { await cartPage.checkout(); await checkoutPage.expectLoaded(); await checkoutPage.continue(); await checkoutPage.expectError(); });
+  test('TC-019 / SC-031 invalid checkout input @sanity', async ({ cartPage, checkoutPage }) => { await cartPage.checkout(); await checkoutPage.fill({ firstName: '', lastName: 'Paliwal', postalCode: 'invalid' }); await checkoutPage.continue(); await checkoutPage.expectError(); });
+  test('TC-020 / SC-033 checkout overview totals @smoke', async ({ cartPage, checkoutPage, checkoutOverviewPage, checkoutData }) => { await cartPage.checkout(); await checkoutPage.fill(checkoutData); await checkoutPage.continue(); await checkoutOverviewPage.expectLoaded(); await expect(checkoutOverviewPage.subtotal).toContainText('Item total:'); await expect(checkoutOverviewPage.tax).toContainText('Tax:'); await expect(checkoutOverviewPage.total).toContainText('Total:'); });
+  test('TC-021 / SC-034 complete purchase @smoke @e2e', async ({ cartPage, checkoutPage, checkoutOverviewPage, checkoutCompletePage, checkoutData }) => { await cartPage.checkout(); await checkoutPage.fill(checkoutData); await checkoutPage.continue(); await checkoutOverviewPage.expectLoaded(); await checkoutOverviewPage.finish(); await checkoutCompletePage.expectLoaded(); });
+  test('TC-024 / SC-049 complete purchase journey @smoke @e2e', async ({ page, cartPage, checkoutPage, checkoutOverviewPage, checkoutCompletePage, checkoutData }) => { await cartPage.checkout(); await checkoutPage.fill(checkoutData); await checkoutPage.continue(); await checkoutOverviewPage.finish(); await checkoutCompletePage.expectLoaded(); await expect(page).toHaveURL(/checkout-complete\.html/); });
+});
